@@ -1,0 +1,122 @@
+.footer {
+  padding-top: 25rem;
+  padding-bottom: 5rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    z-index: -2;
+    background: no-repeat url("../img/footer-bg2.svg");
+    background-position-x: 90%;
+    background-position-y: 38%;
+    background-size: 195%;
+
+    @media only screen and (max-width: $bp-medium) {
+      background-size: 205%;
+      background-position-y: 34%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      background-size: 210%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: no-repeat url("../img/footer-bg1.svg");
+    background-position: center 40%;
+    background-size: 124%;
+
+    @media only screen and (max-width: $bp-medium) {
+      background-position: center 33%;
+      background-size: 130%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      background-size: 136%;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    justify-items: center;
+    font-weight: 500;
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+    color: #fff;
+  }
+
+  ul {
+    li {
+      font-size: 1.1rem;
+      color: #fff;
+      font-weight: 400;
+
+      &:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .col-1 {
+    text-align: center;
+    color: #fff;
+
+    h4 {
+      font-weight: 500;
+      font-size: 3.4rem;
+    }
+    h6 {
+      font-weight: 500;
+      font-size: 2.4rem;
+    }
+    .social {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+
+      i {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+    }
+  }
+
+  .col-3 {
+    li {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .col-4 {
+    i {
+      margin-right: 0.4rem;
+    }
+
+    li:nth-child(2) {
+      margin-bottom: 2rem;
+    }
+  }
+}

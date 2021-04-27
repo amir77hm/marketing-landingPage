@@ -1,0 +1,36 @@
+.Newsletter {
+  text-align: center;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+  form {
+    margin-top: 2rem;
+
+    .form-group {
+      input {
+        width: 25%;
+        outline: none;
+        border: none;
+        background-color: #f6f7fb;
+        margin-right: 1rem;
+        padding: 1.1rem 2rem;
+        border-radius: 2px;
+
+        @media only screen and (max-width: $bp-medium) {
+          width: 40%;
+        }
+
+        &::placeholder {
+          font-size: 1rem;
+          color: #ccc;
+        }
+      }
+    }
+  }
+}

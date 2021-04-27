@@ -1,0 +1,52 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1rem auto;
+  @media only screen and (max-width: $bp-small) {
+    width: 85%;
+  }
+
+  .logo {
+    h1 {
+      font-size: 3rem;
+      color: var(--color-black);
+      display: flex;
+      align-items: center;
+      font-family: "Dosis";
+      font-weight: 700;
+
+      span {
+        margin-bottom: -2.5rem;
+        margin-left: 0.6rem;
+      }
+    }
+
+    img {
+      width: 5.5rem;
+    }
+  }
+
+  .menu {
+    margin-top: 2.5rem;
+
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__link {
+      margin: 0 1rem;
+      padding: 0 0.4rem;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      letter-spacing: 0;
+      font-weight: 500;
+      color: #fff;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}

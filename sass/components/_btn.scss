@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  border-radius: 100rem;
+  cursor: pointer;
+  padding: 1rem 2.8rem;
+  border: none;
+}
+
+.btn-blue {
+  background-image: linear-gradient(
+    to right,
+    var(--color-blue-dark),
+    var(--color-blue-light)
+  );
+  color: #fff;
+
+  &:hover {
+  }
+}
+
+.btn-white {
+  background: #fff;
+  color: #000;
+  border: 1px solid var(--color-blue-dark);
+}

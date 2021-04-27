@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --color-text-1: #484848;
+  --color-text-2: #42495b;
+
+  --color-blue-dark: #1a129f;
+  --color-blue-light: #6156f9;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 42.5em; // 680px
+$bp-smallest: 31.25em; // 500px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 43%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 10rem;
+}
